@@ -1,4 +1,4 @@
 # expanding-images
 
 
-Only a basic proggram that expandes images using forEach and functions =) 
+Only a basic program that expandes images using forEach and functions =) 
