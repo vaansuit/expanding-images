@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex; /*turn into a row*/
+    width: 90vw; /*vw means viewr port, is where in the page the div will fit*/
+}
+
+.panel {
+    background-size: cover 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 500px; /*round the border*/
+    color: white;  /*color of the text */
+    cursor: pointer; /*change the cursor when he passes through div */
+    flex: 0.5; /*set the images to the same size */
+    margin: 10px; /*separeting images*/
+}
