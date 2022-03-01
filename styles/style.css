@@ -19,7 +19,7 @@ body {
 }
 
 .panel {
-    background-size: cover 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
@@ -28,4 +28,35 @@ body {
     cursor: pointer; /*change the cursor when he passes through div */
     flex: 0.5; /*set the images to the same size */
     margin: 10px; /*separeting images*/
+    position: relative;
+    transition: flex 0.7s ease-in;
 }
+
+.panel h3 {
+    font-size: 23px;
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    opacity: 0; /*that will make the h3 disapear till its active */
+    
+}
+
+.panel.active {
+    flex: 5; /*changing the inicial value (0.5)*/
+}
+ .panel.active h3 {
+     opacity: 1;
+     transition: opacity 0.3s ease-in 0.4s; /*making the h3 shows more smootie*/
+ }
+
+ @media(max-widht: 480-px) {
+     .container{
+         width: 100vw;
+     }
+
+     .panel:nth-of-type(4),
+     .panel:nth-of-type(5) {
+         display: none;
+     }
+      /*removing panels*/
+ }
